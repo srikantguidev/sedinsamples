@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Project Plan</title>
+		<script src="reactjs/react.js"></script>
+		<script src="reactjs/JSXTransformer.js"></script>
+		<script src="reactjs/react-bootstrap.min.js"></script>
+		<script src="reactjs/jquery-1.11.1.min.js"></script>
+	</head>
+
+	<body>
+		<div>
+			<div>
+				<h2>Project plan</h2>
+			</div>
+			<div>
+				<div id="container">
+				</div>
+			</div>
+		</div>
+		<script type="text/jsx">
+
+            var Cell = React.createClass({
+                getInitialState: function() {
+                    return {wid: this.props.wid, text: this.props.text}
+                },
+                render: function() {
+                    var sty = {
+                        float: 'left',
+                        textAlign: 'center',
+                        backgroundColor: '#eee',
+                        lineHeight: '20px',
+                        width: this.state.wid + 'px !important',
+                        outline: '1px solid #999',
+                    }
+                    return (
+                        <span style={sty}>{this.state.text}</span>
+                    )
+                }
+            });
+            var Cells = React.createClass({
+                getInitialState: function() {
+                    return {count: this.props.count, cellwid: this.props.cellwid}
+                },
+                render: function() {
+                    var cells = [];
+                    for (i=1; i <= this.state.count; i++) {
+                        cells.push(<Cell wid={this.state.cellwid} text={i.toString()} />)
+                    }
+                    return (
+                            <div>{cells}</div>
+                    )
+                }
+            });
+
+            var Initcells = React.createClass({
+                getInitialState: function() {
+                    return {count: this.props.count, cellwid: this.props.cellwid}
+                },
+                render: function() {
+                    var cells = [];
+                    for (i=1; i <= this.state.count; i++) {
+                        cells.push(<Cell wid={this.state.cellwid} text={'-'} />)
+                    }
+                    return (
+                            <div>{cells}</div>
+                    )
+                }
+            });
+
+            var Milestone = React.createClass({
+                getInitialState: function() {
+                    return {wid: this.props.wid, indx: this.props.indx, startw: this.props.startw, endw: this.props.endw, text: this.props.text}
+                    //startw: this.props.startw, endw: this.props.endw,
+                },
+                render: function() {
+                    wid = this.props.wid * 24;
+                    var st = {
+                        float: 'left',
+                        fontSize: '8px',
+                        lineHeight: '16px',
+                        width: wid + 'px',
+                        backgroundColor: 'lightblue',
+                        outline: '1px solid #333',
+                        textAlign: 'center'
+                    }
+                    ttitle = this.state.wid + ' <' + this.state.startw + ' - ' + this.state.endw + '>';
+                    initcells = '';
+                    if (this.state.indx == 0) {
+                        initcells = <Initcells count={this.state.startw-1} cellwid={24} />
+                    }
+                    return (
+                        <span>
+                            {initcells}
+                            <span title={ttitle} style={st}>{this.state.text}</span>
+                        </span>
+                    )
+                }
+            });
+
+            var Productline = React.createClass({
+                getInitialState: function() {
+                    vstate = {name: this.props.name, duration: this.props.duration, startweek: this.props.startweek, endweek: this.props.endweek, milestones: this.props.milestones}
+//                    alert(JSON.stringify(vstate));
+                    return vstate;
+                },
+                render: function() {
+                    console.clear();
+                    milestonesMap = this.state.milestones.map(function(o,i) {
+                        swk = parseInt(o.startWeek);
+                        ewk = parseInt(o.endWeek);
+                        return <Milestone wid={ewk - swk + 1} indx={i} startw={swk} endw={ewk} text={o.milestone} />
+                    });
+                    //startw={this.state.startweek} endw={this.state.endweek}
+                    var namestyle = {
+                        marginBottom: '1px',
+                        backgroundColor: '#e9e9e9',
+                        fontSize: '12px',
+                        width: '120px',
+                        float: 'left',
+                        lineHeight: '16px',
+                    }
+                    return (
+                        <div style={{clear:'both'}}>
+                            <div style={namestyle}>{this.state.name}</div>
+                            {milestonesMap}
+                        </div>
+                    )
+                }
+            })
+
+            var Season = React.createClass({
+				getInitialState: function() {
+					return {name: this.props.name, prodlines: this.props.prodlines}
+				},
+				render: function() {
+					var arrProdlines = [];
+					this.state.prodlines.map(function(o,i) {
+                        startw = parseInt(o.startWeek);
+                        endw = parseInt(o.endWeek);
+                        arrProdlines.push(<Productline name={o.name} duration={o.duration} startweek={o.startWeek} endweek={o.endWeek} milestones={o.milestones} />)
+				})
+				var sty = {
+					clear: 'both',
+					marginBottom: '10px'
+				}
+				var nameStyle = {
+//					width: '120px !important',
+                    backgroundColor: 'aliceblue'
+				};
+                var prodstyle = {
+                    borderBottom: '1px solid #333'
+                }
+
+                return (
+//                    <div style={sty}>
+//                        <table>
+//                            <tr>
+//                                <td style={nameStyle}>
+//                                    <b>{this.state.name}</b>
+//                                </td>
+//                                <td>cells</td>
+//                            </tr>
+//                            <tr>
+//                                <td>{arrProdlines}</td>
+//                            </tr>
+//                        </table>
+//                    </div>
+
+                    <div style={sty}>
+                        <div style={nameStyle}>
+                            <b>{this.state.name}</b>
+                        </div>
+                        <div>
+                        {{arrProdlines}}
+                        </div>
+                    </div>
+				)
+			}
+			})
+			var App = React.createClass({
+                getInitialState: function() {
+                    return {data: [], rows: []}
+                },
+                componentDidMount: function() {
+                    $.get("project_plan.json",function(response) {
+                        this.setState({data: response});
+                    }.bind(this));
+                },
+                render: function() {
+                    seasons = this.state.data.map(function(o,i) {
+                        return <Season name={o.season} prodlines={o.productLines} />
+                    });
+                    return (
+                        <div>
+                            <div style={{position:'relative',display: 'inline-block',top:'-15px',fontSize:'10px',left:'120px'}}>
+                            <Cells count={60} cellwid={24} />
+                        </div>
+                        <div>{seasons}</div>
+                        </div>
+                    )
+                }
+			});
+
+			React.render(<App />, document.querySelector("#container"));
+		</script>
+	</body>
+</html>

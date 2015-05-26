@@ -1,0 +1,1270 @@
+[
+  {
+    "season": "Spring",
+    "productLines": [
+      {
+        "name": "LLT",
+        "milestones": [
+          {
+            "season": "Spring",
+            "productLine": "LLT",
+            "milestone": "SI",
+            "duration": 2,
+            "startWeek": 4,
+            "endWeek": 6
+          },
+          {
+            "season": "Spring",
+            "productLine": "LLT",
+            "milestone": "GLP",
+            "duration": 1,
+            "startWeek": 7,
+            "endWeek": 8
+          },
+          {
+            "season": "Spring",
+            "productLine": "LLT",
+            "milestone": "SR",
+            "duration": 1,
+            "startWeek": 9,
+            "endWeek": 10
+          },
+          {
+            "season": "Spring",
+            "productLine": "LLT",
+            "milestone": "CR",
+            "duration": 1,
+            "startWeek": 11,
+            "endWeek": 12
+          },
+          {
+            "season": "Spring",
+            "productLine": "LLT",
+            "milestone": "IPR",
+            "duration": 2,
+            "startWeek": 13,
+            "endWeek": 15
+          },
+          {
+            "season": "Spring",
+            "productLine": "LLT",
+            "milestone": "ILR",
+            "duration": 1,
+            "startWeek": 16,
+            "endWeek": 17
+          },
+          {
+            "season": "Spring",
+            "productLine": "LLT",
+            "milestone": "FPR",
+            "duration": 1,
+            "startWeek": 18,
+            "endWeek": 19
+          },
+          {
+            "season": "Spring",
+            "productLine": "LLT",
+            "milestone": "FLA",
+            "duration": 2,
+            "startWeek": 20,
+            "endWeek": 22
+          },
+          {
+            "season": "Spring",
+            "productLine": "LLT",
+            "milestone": "BUY",
+            "duration": 1,
+            "startWeek": 23,
+            "endWeek": 24
+          },
+          {
+            "season": "Spring",
+            "productLine": "LLT",
+            "milestone": "MM",
+            "duration": 18,
+            "startWeek": 25,
+            "endWeek": 43
+          },
+          {
+            "season": "Spring",
+            "productLine": "LLT",
+            "milestone": "DC",
+            "duration": 2,
+            "startWeek": 44,
+            "endWeek": 46
+          },
+          {
+            "season": "Spring",
+            "productLine": "LLT",
+            "milestone": "IS",
+            "duration": 2,
+            "startWeek": 47,
+            "endWeek": 49
+          }
+        ],
+        "duration": 34,
+        "startWeek": 4,
+        "endWeek": 50
+      },
+      {
+        "name": "Socks",
+        "milestones": [
+          {
+            "season": "Spring",
+            "productLine": "Socks",
+            "milestone": "SI",
+            "duration": 1,
+            "startWeek": 2,
+            "endWeek": 3
+          },
+          {
+            "season": "Spring",
+            "productLine": "Socks",
+            "milestone": "GLP",
+            "duration": 2,
+            "startWeek": 4,
+            "endWeek": 6
+          },
+          {
+            "season": "Spring",
+            "productLine": "Socks",
+            "milestone": "SR",
+            "duration": 1,
+            "startWeek": 7,
+            "endWeek": 8
+          },
+          {
+            "season": "Spring",
+            "productLine": "Socks",
+            "milestone": "CR",
+            "duration": 2,
+            "startWeek": 9,
+            "endWeek": 11
+          },
+          {
+            "season": "Spring",
+            "productLine": "Socks",
+            "milestone": "IPR",
+            "duration": 2,
+            "startWeek": 12,
+            "endWeek": 14
+          },
+          {
+            "season": "Spring",
+            "productLine": "Socks",
+            "milestone": "ILR",
+            "duration": 2,
+            "startWeek": 15,
+            "endWeek": 17
+          },
+          {
+            "season": "Spring",
+            "productLine": "Socks",
+            "milestone": "FPR",
+            "duration": 1,
+            "startWeek": 18,
+            "endWeek": 19
+          },
+          {
+            "season": "Spring",
+            "productLine": "Socks",
+            "milestone": "FLA",
+            "duration": 1,
+            "startWeek": 20,
+            "endWeek": 21
+          },
+          {
+            "season": "Spring",
+            "productLine": "Socks",
+            "milestone": "BUY",
+            "duration": 1,
+            "startWeek": 22,
+            "endWeek": 23
+          },
+          {
+            "season": "Spring",
+            "productLine": "Socks",
+            "milestone": "MM",
+            "duration": 19,
+            "startWeek": 24,
+            "endWeek": 43
+          },
+          {
+            "season": "Spring",
+            "productLine": "Socks",
+            "milestone": "DC",
+            "duration": 1,
+            "startWeek": 44,
+            "endWeek": 45
+          },
+          {
+            "season": "Spring",
+            "productLine": "Socks",
+            "milestone": "IS",
+            "duration": 2,
+            "startWeek": 46,
+            "endWeek": 48
+          }
+        ],
+        "duration": 35,
+        "startWeek": 2,
+        "endWeek": 49
+      },
+      {
+        "name": "Regular",
+        "milestones": [
+          {
+            "season": "Spring",
+            "productLine": "Regular",
+            "milestone": "SI",
+            "duration": 2,
+            "startWeek": 22,
+            "endWeek": 24
+          },
+          {
+            "season": "Spring",
+            "productLine": "Regular",
+            "milestone": "GLP",
+            "duration": 2,
+            "startWeek": 25,
+            "endWeek": 27
+          },
+          {
+            "season": "Spring",
+            "productLine": "Regular",
+            "milestone": "SR",
+            "duration": 2,
+            "startWeek": 28,
+            "endWeek": 30
+          },
+          {
+            "season": "Spring",
+            "productLine": "Regular",
+            "milestone": "CR",
+            "duration": 2,
+            "startWeek": 31,
+            "endWeek": 33
+          },
+          {
+            "season": "Spring",
+            "productLine": "Regular",
+            "milestone": "IPR",
+            "duration": 2,
+            "startWeek": 34,
+            "endWeek": 36
+          },
+          {
+            "season": "Spring",
+            "productLine": "Regular",
+            "milestone": "ILR",
+            "duration": 2,
+            "startWeek": 37,
+            "endWeek": 39
+          },
+          {
+            "season": "Spring",
+            "productLine": "Regular",
+            "milestone": "FPR",
+            "duration": 2,
+            "startWeek": 40,
+            "endWeek": 42
+          },
+          {
+            "season": "Spring",
+            "productLine": "Regular",
+            "milestone": "FLA",
+            "duration": 2,
+            "startWeek": 43,
+            "endWeek": 45
+          },
+          {
+            "season": "Spring",
+            "productLine": "Regular",
+            "milestone": "BUY",
+            "duration": 2,
+            "startWeek": 46,
+            "endWeek": 48
+          },
+          {
+            "season": "Spring",
+            "productLine": "Regular",
+            "milestone": "MM",
+            "duration": 11,
+            "startWeek": 49,
+            "endWeek": 60
+          },
+          {
+            "season": "Spring",
+            "productLine": "Regular",
+            "milestone": "DC",
+            "duration": 2,
+            "startWeek": 61,
+            "endWeek": 63
+          },
+          {
+            "season": "Spring",
+            "productLine": "Regular",
+            "milestone": "IS",
+            "duration": 2,
+            "startWeek": 64,
+            "endWeek": 66
+          }
+        ],
+        "duration": 33,
+        "startWeek": 22,
+        "endWeek": 67
+      }
+    ]
+  },
+  {
+    "season": "Summer",
+    "productLines": [
+      {
+        "name": "LLT",
+        "milestones": [
+          {
+            "season": "Summer",
+            "productLine": "LLT",
+            "milestone": "SI",
+            "duration": 2,
+            "startWeek": 18,
+            "endWeek": 20
+          },
+          {
+            "season": "Summer",
+            "productLine": "LLT",
+            "milestone": "GLP",
+            "duration": 2,
+            "startWeek": 21,
+            "endWeek": 23
+          },
+          {
+            "season": "Summer",
+            "productLine": "LLT",
+            "milestone": "SR",
+            "duration": 1,
+            "startWeek": 24,
+            "endWeek": 25
+          },
+          {
+            "season": "Summer",
+            "productLine": "LLT",
+            "milestone": "CR",
+            "duration": 1,
+            "startWeek": 26,
+            "endWeek": 27
+          },
+          {
+            "season": "Summer",
+            "productLine": "LLT",
+            "milestone": "IPR",
+            "duration": 1,
+            "startWeek": 28,
+            "endWeek": 29
+          },
+          {
+            "season": "Summer",
+            "productLine": "LLT",
+            "milestone": "ILR",
+            "duration": 1,
+            "startWeek": 30,
+            "endWeek": 31
+          },
+          {
+            "season": "Summer",
+            "productLine": "LLT",
+            "milestone": "FPR",
+            "duration": 2,
+            "startWeek": 32,
+            "endWeek": 34
+          },
+          {
+            "season": "Summer",
+            "productLine": "LLT",
+            "milestone": "FLA",
+            "duration": 1,
+            "startWeek": 35,
+            "endWeek": 36
+          },
+          {
+            "season": "Summer",
+            "productLine": "LLT",
+            "milestone": "BUY",
+            "duration": 1,
+            "startWeek": 37,
+            "endWeek": 38
+          },
+          {
+            "season": "Summer",
+            "productLine": "LLT",
+            "milestone": "MM",
+            "duration": 5,
+            "startWeek": 39,
+            "endWeek": 44
+          },
+          {
+            "season": "Summer",
+            "productLine": "LLT",
+            "milestone": "DC",
+            "duration": 1,
+            "startWeek": 45,
+            "endWeek": 46
+          },
+          {
+            "season": "Summer",
+            "productLine": "LLT",
+            "milestone": "IS",
+            "duration": 1,
+            "startWeek": 47,
+            "endWeek": 48
+          }
+        ],
+        "duration": 19,
+        "startWeek": 18,
+        "endWeek": 49
+      },
+      {
+        "name": "Socks",
+        "milestones": [
+          {
+            "season": "Summer",
+            "productLine": "Socks",
+            "milestone": "SI",
+            "duration": 2,
+            "startWeek": 24,
+            "endWeek": 26
+          },
+          {
+            "season": "Summer",
+            "productLine": "Socks",
+            "milestone": "GLP",
+            "duration": 1,
+            "startWeek": 27,
+            "endWeek": 28
+          },
+          {
+            "season": "Summer",
+            "productLine": "Socks",
+            "milestone": "SR",
+            "duration": 2,
+            "startWeek": 29,
+            "endWeek": 31
+          },
+          {
+            "season": "Summer",
+            "productLine": "Socks",
+            "milestone": "CR",
+            "duration": 2,
+            "startWeek": 32,
+            "endWeek": 34
+          },
+          {
+            "season": "Summer",
+            "productLine": "Socks",
+            "milestone": "IPR",
+            "duration": 2,
+            "startWeek": 35,
+            "endWeek": 37
+          },
+          {
+            "season": "Summer",
+            "productLine": "Socks",
+            "milestone": "ILR",
+            "duration": 2,
+            "startWeek": 38,
+            "endWeek": 40
+          },
+          {
+            "season": "Summer",
+            "productLine": "Socks",
+            "milestone": "FPR",
+            "duration": 1,
+            "startWeek": 41,
+            "endWeek": 42
+          },
+          {
+            "season": "Summer",
+            "productLine": "Socks",
+            "milestone": "FLA",
+            "duration": 2,
+            "startWeek": 43,
+            "endWeek": 45
+          },
+          {
+            "season": "Summer",
+            "productLine": "Socks",
+            "milestone": "BUY",
+            "duration": 2,
+            "startWeek": 46,
+            "endWeek": 48
+          },
+          {
+            "season": "Summer",
+            "productLine": "Socks",
+            "milestone": "MM",
+            "duration": 2,
+            "startWeek": 49,
+            "endWeek": 51
+          },
+          {
+            "season": "Summer",
+            "productLine": "Socks",
+            "milestone": "DC",
+            "duration": 1,
+            "startWeek": 52,
+            "endWeek": 53
+          },
+          {
+            "season": "Summer",
+            "productLine": "Socks",
+            "milestone": "IS",
+            "duration": 2,
+            "startWeek": 54,
+            "endWeek": 56
+          }
+        ],
+        "duration": 21,
+        "startWeek": 24,
+        "endWeek": 57
+      },
+      {
+        "name": "Regular",
+        "milestones": [
+          {
+            "season": "Summer",
+            "productLine": "Regular",
+            "milestone": "SI",
+            "duration": 1,
+            "startWeek": 7,
+            "endWeek": 8
+          },
+          {
+            "season": "Summer",
+            "productLine": "Regular",
+            "milestone": "GLP",
+            "duration": 2,
+            "startWeek": 9,
+            "endWeek": 11
+          },
+          {
+            "season": "Summer",
+            "productLine": "Regular",
+            "milestone": "SR",
+            "duration": 2,
+            "startWeek": 12,
+            "endWeek": 14
+          },
+          {
+            "season": "Summer",
+            "productLine": "Regular",
+            "milestone": "CR",
+            "duration": 2,
+            "startWeek": 15,
+            "endWeek": 17
+          },
+          {
+            "season": "Summer",
+            "productLine": "Regular",
+            "milestone": "IPR",
+            "duration": 1,
+            "startWeek": 18,
+            "endWeek": 19
+          },
+          {
+            "season": "Summer",
+            "productLine": "Regular",
+            "milestone": "ILR",
+            "duration": 2,
+            "startWeek": 20,
+            "endWeek": 22
+          },
+          {
+            "season": "Summer",
+            "productLine": "Regular",
+            "milestone": "FPR",
+            "duration": 1,
+            "startWeek": 23,
+            "endWeek": 24
+          },
+          {
+            "season": "Summer",
+            "productLine": "Regular",
+            "milestone": "FLA",
+            "duration": 2,
+            "startWeek": 25,
+            "endWeek": 27
+          },
+          {
+            "season": "Summer",
+            "productLine": "Regular",
+            "milestone": "BUY",
+            "duration": 1,
+            "startWeek": 28,
+            "endWeek": 29
+          },
+          {
+            "season": "Summer",
+            "productLine": "Regular",
+            "milestone": "MM",
+            "duration": 4,
+            "startWeek": 30,
+            "endWeek": 34
+          },
+          {
+            "season": "Summer",
+            "productLine": "Regular",
+            "milestone": "DC",
+            "duration": 2,
+            "startWeek": 35,
+            "endWeek": 37
+          },
+          {
+            "season": "Summer",
+            "productLine": "Regular",
+            "milestone": "IS",
+            "duration": 1,
+            "startWeek": 38,
+            "endWeek": 39
+          }
+        ],
+        "duration": 21,
+        "startWeek": 7,
+        "endWeek": 40
+      }
+    ]
+  },
+  {
+    "season": "Fall",
+    "productLines": [
+      {
+        "name": "LLT",
+        "milestones": [
+          {
+            "season": "Fall",
+            "productLine": "LLT",
+            "milestone": "SI",
+            "duration": 2,
+            "startWeek": 1,
+            "endWeek": 3
+          },
+          {
+            "season": "Fall",
+            "productLine": "LLT",
+            "milestone": "GLP",
+            "duration": 2,
+            "startWeek": 4,
+            "endWeek": 6
+          },
+          {
+            "season": "Fall",
+            "productLine": "LLT",
+            "milestone": "SR",
+            "duration": 1,
+            "startWeek": 7,
+            "endWeek": 8
+          },
+          {
+            "season": "Fall",
+            "productLine": "LLT",
+            "milestone": "CR",
+            "duration": 1,
+            "startWeek": 9,
+            "endWeek": 10
+          },
+          {
+            "season": "Fall",
+            "productLine": "LLT",
+            "milestone": "IPR",
+            "duration": 2,
+            "startWeek": 11,
+            "endWeek": 13
+          },
+          {
+            "season": "Fall",
+            "productLine": "LLT",
+            "milestone": "ILR",
+            "duration": 1,
+            "startWeek": 14,
+            "endWeek": 15
+          },
+          {
+            "season": "Fall",
+            "productLine": "LLT",
+            "milestone": "FPR",
+            "duration": 1,
+            "startWeek": 16,
+            "endWeek": 17
+          },
+          {
+            "season": "Fall",
+            "productLine": "LLT",
+            "milestone": "FLA",
+            "duration": 1,
+            "startWeek": 18,
+            "endWeek": 19
+          },
+          {
+            "season": "Fall",
+            "productLine": "LLT",
+            "milestone": "BUY",
+            "duration": 2,
+            "startWeek": 20,
+            "endWeek": 22
+          },
+          {
+            "season": "Fall",
+            "productLine": "LLT",
+            "milestone": "MM",
+            "duration": 15,
+            "startWeek": 23,
+            "endWeek": 38
+          },
+          {
+            "season": "Fall",
+            "productLine": "LLT",
+            "milestone": "DC",
+            "duration": 1,
+            "startWeek": 39,
+            "endWeek": 40
+          },
+          {
+            "season": "Fall",
+            "productLine": "LLT",
+            "milestone": "IS",
+            "duration": 2,
+            "startWeek": 41,
+            "endWeek": 43
+          }
+        ],
+        "duration": 31,
+        "startWeek": 1,
+        "endWeek": 44
+      },
+      {
+        "name": "Socks",
+        "milestones": [
+          {
+            "season": "Fall",
+            "productLine": "Socks",
+            "milestone": "SI",
+            "duration": 2,
+            "startWeek": 1,
+            "endWeek": 3
+          },
+          {
+            "season": "Fall",
+            "productLine": "Socks",
+            "milestone": "GLP",
+            "duration": 2,
+            "startWeek": 4,
+            "endWeek": 6
+          },
+          {
+            "season": "Fall",
+            "productLine": "Socks",
+            "milestone": "SR",
+            "duration": 2,
+            "startWeek": 7,
+            "endWeek": 9
+          },
+          {
+            "season": "Fall",
+            "productLine": "Socks",
+            "milestone": "CR",
+            "duration": 2,
+            "startWeek": 10,
+            "endWeek": 12
+          },
+          {
+            "season": "Fall",
+            "productLine": "Socks",
+            "milestone": "IPR",
+            "duration": 2,
+            "startWeek": 13,
+            "endWeek": 15
+          },
+          {
+            "season": "Fall",
+            "productLine": "Socks",
+            "milestone": "ILR",
+            "duration": 2,
+            "startWeek": 16,
+            "endWeek": 18
+          },
+          {
+            "season": "Fall",
+            "productLine": "Socks",
+            "milestone": "FPR",
+            "duration": 2,
+            "startWeek": 19,
+            "endWeek": 21
+          },
+          {
+            "season": "Fall",
+            "productLine": "Socks",
+            "milestone": "FLA",
+            "duration": 2,
+            "startWeek": 22,
+            "endWeek": 24
+          },
+          {
+            "season": "Fall",
+            "productLine": "Socks",
+            "milestone": "BUY",
+            "duration": 2,
+            "startWeek": 25,
+            "endWeek": 27
+          },
+          {
+            "season": "Fall",
+            "productLine": "Socks",
+            "milestone": "MM",
+            "duration": 12,
+            "startWeek": 28,
+            "endWeek": 40
+          },
+          {
+            "season": "Fall",
+            "productLine": "Socks",
+            "milestone": "DC",
+            "duration": 1,
+            "startWeek": 41,
+            "endWeek": 42
+          },
+          {
+            "season": "Fall",
+            "productLine": "Socks",
+            "milestone": "IS",
+            "duration": 2,
+            "startWeek": 43,
+            "endWeek": 45
+          }
+        ],
+        "duration": 33,
+        "startWeek": 1,
+        "endWeek": 46
+      },
+      {
+        "name": "Regular",
+        "milestones": [
+          {
+            "season": "Fall",
+            "productLine": "Regular",
+            "milestone": "SI",
+            "duration": 1,
+            "startWeek": 2,
+            "endWeek": 3
+          },
+          {
+            "season": "Fall",
+            "productLine": "Regular",
+            "milestone": "GLP",
+            "duration": 1,
+            "startWeek": 4,
+            "endWeek": 5
+          },
+          {
+            "season": "Fall",
+            "productLine": "Regular",
+            "milestone": "SR",
+            "duration": 1,
+            "startWeek": 6,
+            "endWeek": 7
+          },
+          {
+            "season": "Fall",
+            "productLine": "Regular",
+            "milestone": "CR",
+            "duration": 2,
+            "startWeek": 8,
+            "endWeek": 10
+          },
+          {
+            "season": "Fall",
+            "productLine": "Regular",
+            "milestone": "IPR",
+            "duration": 2,
+            "startWeek": 11,
+            "endWeek": 13
+          },
+          {
+            "season": "Fall",
+            "productLine": "Regular",
+            "milestone": "ILR",
+            "duration": 1,
+            "startWeek": 14,
+            "endWeek": 15
+          },
+          {
+            "season": "Fall",
+            "productLine": "Regular",
+            "milestone": "FPR",
+            "duration": 1,
+            "startWeek": 16,
+            "endWeek": 17
+          },
+          {
+            "season": "Fall",
+            "productLine": "Regular",
+            "milestone": "FLA",
+            "duration": 1,
+            "startWeek": 18,
+            "endWeek": 19
+          },
+          {
+            "season": "Fall",
+            "productLine": "Regular",
+            "milestone": "BUY",
+            "duration": 2,
+            "startWeek": 20,
+            "endWeek": 22
+          },
+          {
+            "season": "Fall",
+            "productLine": "Regular",
+            "milestone": "MM",
+            "duration": 9,
+            "startWeek": 23,
+            "endWeek": 32
+          },
+          {
+            "season": "Fall",
+            "productLine": "Regular",
+            "milestone": "DC",
+            "duration": 1,
+            "startWeek": 33,
+            "endWeek": 34
+          },
+          {
+            "season": "Fall",
+            "productLine": "Regular",
+            "milestone": "IS",
+            "duration": 2,
+            "startWeek": 35,
+            "endWeek": 37
+          }
+        ],
+        "duration": 24,
+        "startWeek": 2,
+        "endWeek": 38
+      }
+    ]
+  },
+  {
+    "season": "Winter",
+    "productLines": [
+      {
+        "name": "LLT",
+        "milestones": [
+          {
+            "season": "Winter",
+            "productLine": "LLT",
+            "milestone": "SI",
+            "duration": 1,
+            "startWeek": 3,
+            "endWeek": 4
+          },
+          {
+            "season": "Winter",
+            "productLine": "LLT",
+            "milestone": "GLP",
+            "duration": 2,
+            "startWeek": 5,
+            "endWeek": 7
+          },
+          {
+            "season": "Winter",
+            "productLine": "LLT",
+            "milestone": "SR",
+            "duration": 1,
+            "startWeek": 8,
+            "endWeek": 9
+          },
+          {
+            "season": "Winter",
+            "productLine": "LLT",
+            "milestone": "CR",
+            "duration": 2,
+            "startWeek": 10,
+            "endWeek": 12
+          },
+          {
+            "season": "Winter",
+            "productLine": "LLT",
+            "milestone": "IPR",
+            "duration": 2,
+            "startWeek": 13,
+            "endWeek": 15
+          },
+          {
+            "season": "Winter",
+            "productLine": "LLT",
+            "milestone": "ILR",
+            "duration": 1,
+            "startWeek": 16,
+            "endWeek": 17
+          },
+          {
+            "season": "Winter",
+            "productLine": "LLT",
+            "milestone": "FPR",
+            "duration": 1,
+            "startWeek": 18,
+            "endWeek": 19
+          },
+          {
+            "season": "Winter",
+            "productLine": "LLT",
+            "milestone": "FLA",
+            "duration": 1,
+            "startWeek": 20,
+            "endWeek": 21
+          },
+          {
+            "season": "Winter",
+            "productLine": "LLT",
+            "milestone": "BUY",
+            "duration": 2,
+            "startWeek": 22,
+            "endWeek": 24
+          },
+          {
+            "season": "Winter",
+            "productLine": "LLT",
+            "milestone": "MM",
+            "duration": 19,
+            "startWeek": 25,
+            "endWeek": 44
+          },
+          {
+            "season": "Winter",
+            "productLine": "LLT",
+            "milestone": "DC",
+            "duration": 2,
+            "startWeek": 45,
+            "endWeek": 47
+          },
+          {
+            "season": "Winter",
+            "productLine": "LLT",
+            "milestone": "IS",
+            "duration": 2,
+            "startWeek": 48,
+            "endWeek": 50
+          }
+        ],
+        "duration": 36,
+        "startWeek": 3,
+        "endWeek": 51
+      },
+      {
+        "name": "Socks",
+        "milestones": [
+          {
+            "season": "Winter",
+            "productLine": "Socks",
+            "milestone": "SI",
+            "duration": 2,
+            "startWeek": 1,
+            "endWeek": 3
+          },
+          {
+            "season": "Winter",
+            "productLine": "Socks",
+            "milestone": "GLP",
+            "duration": 2,
+            "startWeek": 4,
+            "endWeek": 6
+          },
+          {
+            "season": "Winter",
+            "productLine": "Socks",
+            "milestone": "SR",
+            "duration": 1,
+            "startWeek": 7,
+            "endWeek": 8
+          },
+          {
+            "season": "Winter",
+            "productLine": "Socks",
+            "milestone": "CR",
+            "duration": 1,
+            "startWeek": 9,
+            "endWeek": 10
+          },
+          {
+            "season": "Winter",
+            "productLine": "Socks",
+            "milestone": "IPR",
+            "duration": 2,
+            "startWeek": 11,
+            "endWeek": 13
+          },
+          {
+            "season": "Winter",
+            "productLine": "Socks",
+            "milestone": "ILR",
+            "duration": 1,
+            "startWeek": 14,
+            "endWeek": 15
+          },
+          {
+            "season": "Winter",
+            "productLine": "Socks",
+            "milestone": "FPR",
+            "duration": 2,
+            "startWeek": 16,
+            "endWeek": 18
+          },
+          {
+            "season": "Winter",
+            "productLine": "Socks",
+            "milestone": "FLA",
+            "duration": 2,
+            "startWeek": 19,
+            "endWeek": 21
+          },
+          {
+            "season": "Winter",
+            "productLine": "Socks",
+            "milestone": "BUY",
+            "duration": 1,
+            "startWeek": 22,
+            "endWeek": 23
+          },
+          {
+            "season": "Winter",
+            "productLine": "Socks",
+            "milestone": "MM",
+            "duration": 7,
+            "startWeek": 24,
+            "endWeek": 31
+          },
+          {
+            "season": "Winter",
+            "productLine": "Socks",
+            "milestone": "DC",
+            "duration": 1,
+            "startWeek": 32,
+            "endWeek": 33
+          },
+          {
+            "season": "Winter",
+            "productLine": "Socks",
+            "milestone": "IS",
+            "duration": 2,
+            "startWeek": 34,
+            "endWeek": 36
+          }
+        ],
+        "duration": 24,
+        "startWeek": 1,
+        "endWeek": 37
+      },
+      {
+        "name": "Regular",
+        "milestones": [
+          {
+            "season": "Winter",
+            "productLine": "Regular",
+            "milestone": "SI",
+            "duration": 1,
+            "startWeek": 8,
+            "endWeek": 9
+          },
+          {
+            "season": "Winter",
+            "productLine": "Regular",
+            "milestone": "GLP",
+            "duration": 1,
+            "startWeek": 10,
+            "endWeek": 11
+          },
+          {
+            "season": "Winter",
+            "productLine": "Regular",
+            "milestone": "SR",
+            "duration": 2,
+            "startWeek": 12,
+            "endWeek": 14
+          },
+          {
+            "season": "Winter",
+            "productLine": "Regular",
+            "milestone": "CR",
+            "duration": 1,
+            "startWeek": 15,
+            "endWeek": 16
+          },
+          {
+            "season": "Winter",
+            "productLine": "Regular",
+            "milestone": "IPR",
+            "duration": 1,
+            "startWeek": 17,
+            "endWeek": 18
+          },
+          {
+            "season": "Winter",
+            "productLine": "Regular",
+            "milestone": "ILR",
+            "duration": 1,
+            "startWeek": 19,
+            "endWeek": 20
+          },
+          {
+            "season": "Winter",
+            "productLine": "Regular",
+            "milestone": "FPR",
+            "duration": 2,
+            "startWeek": 21,
+            "endWeek": 23
+          },
+          {
+            "season": "Winter",
+            "productLine": "Regular",
+            "milestone": "FLA",
+            "duration": 1,
+            "startWeek": 24,
+            "endWeek": 25
+          },
+          {
+            "season": "Winter",
+            "productLine": "Regular",
+            "milestone": "BUY",
+            "duration": 1,
+            "startWeek": 26,
+            "endWeek": 27
+          },
+          {
+            "season": "Winter",
+            "productLine": "Regular",
+            "milestone": "MM",
+            "duration": 15,
+            "startWeek": 28,
+            "endWeek": 43
+          },
+          {
+            "season": "Winter",
+            "productLine": "Regular",
+            "milestone": "DC",
+            "duration": 1,
+            "startWeek": 44,
+            "endWeek": 45
+          },
+          {
+            "season": "Winter",
+            "productLine": "Regular",
+            "milestone": "IS",
+            "duration": 2,
+            "startWeek": 46,
+            "endWeek": 48
+          }
+        ],
+        "duration": 29,
+        "startWeek": 8,
+        "endWeek": 49
+      }
+    ]
+  }
+]
