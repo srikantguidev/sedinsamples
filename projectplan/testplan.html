@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Test plan</title>
+        <link rel="stylesheet" href="bootstrap322/css/bootstrap.min.css"/>
+        <style>
+            
+        </style>
+    </head>
+    <body class="container">
+        <div id="appcontent"></div>
+        
+        <script src="reactjs/react.js"></script>
+        <script src="reactjs/JSXTransformer.js"></script>
+        <script src="reactjs/react-bootstrap.min.js"></script>
+        <script src="reactjs/jquery-1.11.1.min.js"></script>
+        <script type="text/jsx">
+        
+            var Cell = React.createClass({
+                getInitialState: function() {
+                    return {msname: this.props.name, sw: this.props.startw, ew: this.props.endw, indx: this.props.indx}
+                },
+                
+                render: function() {
+                    //beginning period
+                    startn = this.state.sw-1;
+                    // beginning space
+                    starterwid = ((this.state.indx == 0) && (this.state.sw > 1)) ? ((startn)*20) : 0;
+                    cellwid = ((this.state.ew - this.state.sw + 1)*20) + 'px';
+                    var startsty = {
+                        position: 'relative',
+                        display: 'inline-block',
+                        width: starterwid,
+                        backgroundColor: '#000',
+                        textAlign: 'center',
+                        outline: '1px solid teal',
+                        color: 'white'
+                    }
+                    var cellsty = {
+                        position: 'relative',
+                        display: 'inline-block',
+                        width: cellwid,
+                        backgroundColor: '#dedede',
+                        textAlign: 'center',
+                        outline: '1px solid teal'
+                    }
+                    startelem = <span></span>
+                    if (starterwid) {
+                        startelem = <span style={startsty}>{startn}</span>;
+                    }
+                    return (
+                        <span>
+                        {startelem}
+                        <span style={cellsty}>{this.state.msname}</span>
+                        </span>
+                    )
+                }
+            });
+            
+            var Projectplan = React.createClass({
+                
+                getInitialState: function() {
+                
+                    return {seasons: []};
+                },
+                
+                componentDidMount: function() {
+                    $.get("projectplan.json", function(response) {
+                        this.setState({seasons: response});
+                    }.bind(this));
+                },
+                render: function() {
+                
+                    var plName = {
+                        float: 'left',
+                        width: '120px !important',
+                        outline: '1px solid #999',
+                        backgroundColor: '#eee'
+                    }
+                
+                    return (
+                        <div>
+                            <h3>Project plan</h3>
+                            <hr />
+                            <div>
+                                {this.state.seasons.map(function(season,seasonIndx) {
+                                    return (
+                                        <div className='clearfix'>
+                                        <h3>{season.season}</h3>
+                                        {season.productLines.map(function(pl, plIndx){
+                                            return (
+                                                <div style={{clear:'both'}}>
+                                                <span style={plName}>{pl.name}</span>
+                                                {pl.milestones.map(function(ms,msIndx){
+                                                    return (
+                                                        <span>
+                                                            <Cell startw={ms.startWeek} endw={ms.endWeek} indx={msIndx} name={ms.milestone} />
+                                                        </span>
+                                                    )
+                                                })}
+                                                </div>
+                                            )
+                                        },this)}
+                                        </div>
+                                    )
+                                },this)}
+                            </div>
+                        </div>
+                    )
+                }
+            });
+            
+            var data = [];
+            
+            
+            
+            var mountNode = document.querySelector( "#appcontent" );
+            React.render( <Projectplan />, mountNode);
+        </script>
+    </body>
+</html>

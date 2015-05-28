@@ -21,107 +21,117 @@
 			</div>
 		</div>
 		<script type="text/jsx">
-            var Milestone = React.createClass({
+
+            var Cell = React.createClass({
                 getInitialState: function() {
-                    return {name: this.props.name, offset: this.props.offset, startw: this.props.startw, endw: this.props.endw}
+                    return {wid: this.props.wid, text: this.props.text}
                 },
                 render: function() {
-                    wid = ((this.state.endw - this.state.startw) * 20);
-                    offset = (this.state.offset + wid) * 20;
-                    var msstyle = {
+                    var sty = {
                         float: 'left',
-//                        position: 'relative',
-//                        display: 'inline',
-                        backgroundColor: 'lightblue',
-                        width: wid + 'px !important',
-                        borderRight: '1px solid white',
-                        fontSize: '10px',
                         textAlign: 'center',
-                        lineHeight: '20px'
+                        backgroundColor: '#eee',
+                        lineHeight: '20px',
+                        width: this.state.wid + 'px !important',
+                        outline: '1px solid #999',
                     }
-                    var startstyle = {
-                        float: 'left',
-                        left: offset + 'px'
-                    }
-                    ttitle = 'week: ' + this.state.startw + ' - ' + this.state.endw;
                     return (
-                        <div>
-                            <div style={startstyle}></div>
-                            <div title={ttitle} style={msstyle}>{this.state.name}</div>
-                        </div>
+                        <span style={sty}>{this.state.text}</span>
+                    )
+                }
+            });
+            var Cells = React.createClass({
+                getInitialState: function() {
+                    return {count: this.props.count, cellwid: this.props.cellwid}
+                },
+                render: function() {
+                    var cells = [];
+                    for (i=1; i <= this.state.count; i++) {
+                        cells.push(<Cell wid={this.state.cellwid} text={i.toString()} />)
+                    }
+                    return (
+                            <div>{cells}</div>
+                    )
+                }
+            });
+
+            var Initcells = React.createClass({
+                getInitialState: function() {
+                    return {count: this.props.count, cellwid: this.props.cellwid}
+                },
+                render: function() {
+                    var cells = [];
+                    for (i=1; i <= this.state.count; i++) {
+                        cells.push(<Cell wid={this.state.cellwid} text={'-'} />)
+                    }
+                    return (
+                            <div>{cells}</div>
+                    )
+                }
+            });
+
+            var Milestone = React.createClass({
+                getInitialState: function() {
+                    return {wid: this.props.wid, indx: this.props.indx, startw: this.props.startw, endw: this.props.endw, text: this.props.text}
+                    //startw: this.props.startw, endw: this.props.endw,
+                },
+                render: function() {
+                    wid = this.props.wid * 24;
+                    var st = {
+                        float: 'left',
+                        fontSize: '8px',
+                        lineHeight: '16px',
+                        width: wid + 'px',
+                        backgroundColor: 'lightblue',
+                        outline: '1px solid #333',
+                        textAlign: 'center'
+                    }
+                    ttitle = this.state.wid + ' <' + this.state.startw + ' - ' + this.state.endw + '>';
+                    initcells = '';
+                    if (this.state.indx == 0) {
+                        initcells = <Initcells count={this.state.startw-1} cellwid={24} />
+                    }
+                    return (
+                        <span>
+                            {initcells}
+                            <span title={ttitle} style={st}>{this.state.text}</span>
+                        </span>
                     )
                 }
             });
 
             var Productline = React.createClass({
                 getInitialState: function() {
-                    return {name: this.props.name, duration:this.props.duration, startweek: this.props.startWeek, endweek: this.props.endWeek, milestones: this.props.milestones}
+                    vstate = {name: this.props.name, duration: this.props.duration, startweek: this.props.startweek, endweek: this.props.endweek, milestones: this.props.milestones}
+//                    alert(JSON.stringify(vstate));
+                    return vstate;
                 },
                 render: function() {
-                    namestyle = {
+                    console.clear();
+                    milestonesMap = this.state.milestones.map(function(o,i) {
+                        swk = parseInt(o.startWeek);
+                        ewk = parseInt(o.endWeek);
+                        return <Milestone wid={ewk - swk + 1} indx={i} startw={swk} endw={ewk} text={o.milestone} />
+                    });
+                    //startw={this.state.startweek} endw={this.state.endweek}
+                    var namestyle = {
                         marginBottom: '1px',
-//                        borderTop: '1px solid #999',
-//                        borderBottom: '1px solid #999',
                         backgroundColor: '#e9e9e9',
-                        padding: '2px',
-                        fontSize: '14px',
+                        fontSize: '12px',
                         width: '120px',
                         float: 'left',
-                        left: '0'
+                        lineHeight: '16px',
                     }
-                    milestones = this.props.milestones.map(function(o,i) {
-                        startw = parseInt(o.startWeek);
-                        endw = parseInt(o.endWeek);
-                        offset = startw - 1;
-                        return <Milestone name={o.milestone} offset={offset} startw={startw} endw={endw} />
-                    });
-                    trstyle = {
-                        lineHeight: '20px'
-                    }
-//                            <table cellspacing='0' cellpadding='0'>
-//                                <tr style={trstyle}>
                     return (
                         <div style={{clear:'both'}}>
-                                    <div style={namestyle}>{this.state.name}</div>
-                                    {milestones}
+                            <div style={namestyle}>{this.state.name}</div>
+                            {milestonesMap}
                         </div>
                     )
-//                                </tr>
-//                            </table>
-                }
-            });
-
-            var Headcell = React.createClass({
-                getInitialState: function() {
-                    return {wk: this.props.wk, wid: this.props.wid}
-                },
-                render: function() {
-                    sty = {
-                        position: 'relative',
-                        display: 'inline',
-                        width: (this.state.wid * 30) + 'px !important',
-                        padding: '3px 1px',
-                        backgroundColor: '#ddd',
-                        border: '1px solid #333'
-                    }
-                    return (
-                        <div title='{this.state.wid}' style={sty}>{this.state.wk}</div>
-                    )
-                }
-            });
-
-            var Cells = React.createClass({
-                render: function() {
-                    cells = [];
-                    for (w=1; w < 366; w++) {
-                        cells.push(<Headcell wk={w} wid={20} />)
-                    }
-                    sty = {
-                    }
-                    return <td style={sty}>{cells}</td>
                 }
             })
-			var Season = React.createClass({
+
+            var Season = React.createClass({
 				getInitialState: function() {
 					return {name: this.props.name, prodlines: this.props.prodlines}
 				},
@@ -130,11 +140,6 @@
 					this.state.prodlines.map(function(o,i) {
                         startw = parseInt(o.startWeek);
                         endw = parseInt(o.endWeek);
-//                        if (i == 0) {
-//                            endw = startw - 1;
-//                            startw = 1;
-//                            arrProdlines.push(<Productline name={"-"} indx={i} duration={endw - startw+1} startweek={0} endweek={0} milestones={[]} />);
-//                        }
                         arrProdlines.push(<Productline name={o.name} duration={o.duration} startweek={o.startWeek} endweek={o.endWeek} milestones={o.milestones} />)
 				})
 				var sty = {
@@ -142,9 +147,8 @@
 					marginBottom: '10px'
 				}
 				var nameStyle = {
-                    position: 'relative',
-                    left: 0,
-					width: '120px !important'
+//					width: '120px !important',
+                    backgroundColor: 'aliceblue'
 				};
                 var prodstyle = {
                     borderBottom: '1px solid #333'
@@ -168,14 +172,14 @@
                     <div style={sty}>
                         <div style={nameStyle}>
                             <b>{this.state.name}</b>
-
                         </div>
-                        <div>{arrProdlines}</div>
+                        <div>
+                        {{arrProdlines}}
+                        </div>
                     </div>
 				)
 			}
 			})
-
 			var App = React.createClass({
                 getInitialState: function() {
                     return {data: [], rows: []}
@@ -191,10 +195,10 @@
                     });
                     return (
                         <div>
-                            <div style={{position:'relative',display: 'inline-block',top:'-15px',fontSize:'10px',left:'121px'}}>
-                            <Cells />
+                            <div style={{position:'relative',display: 'inline-block',top:'-15px',fontSize:'10px',left:'120px'}}>
+                            <Cells count={60} cellwid={24} />
                         </div>
-                        {seasons}
+                        <div>{seasons}</div>
                         </div>
                     )
                 }
